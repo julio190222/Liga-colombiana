@@ -1,0 +1,502 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif; /* Fuente general */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+    background-color: #eef2f3; /* Color de fondo */
+    color: #333; /* Color del texto */
+}
+
+/* Estilos para el encabezado */
+/* Estilos para el encabezado */
+header {
+    background-color: #2c3e50; /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+    padding: 10px; /* Reducir el espaciado interno */
+    text-align: center; /* Centrar texto */
+    position: fixed; /* Fijar el encabezado */
+    top: 0; /* Alinear al top */
+    left: 0; /* Alinear al left */
+    width: 100%; /* Ancho completo */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+}
+
+/* Estilo para el título del encabezado */
+header h1 {
+    font-size: 1.5em; /* Reducir el tamaño de la fuente del título */
+    margin: 0; /* Sin margen */
+}
+
+/* Estilo para la navegación */
+nav ul {
+    list-style: none; /* Sin viñetas */
+    padding: 0; /* Sin relleno */
+}
+
+nav ul li {
+    display: inline; /* Mostrar en línea */
+    margin: 0 10px; /* Reducir el espaciado entre elementos */
+}
+
+nav a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 0.9em; /* Reducir el tamaño de la fuente de los enlaces */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Para evitar que el contenido se superponga al encabezado fijo */
+body {
+    padding-top: 60px; /* Ajusta este valor según la nueva altura de tu encabezado */
+}
+
+/* Estilos para la sección de inicio */
+#inicio {
+    background-color: white; /* Color de fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior, centrado */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo de la sección */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#inicio h2 {
+    color: #2c3e50; /* Color del texto del encabezado */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+#inicio p {
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Estilos generales para la sección */
+#acerca {
+    background-color: #f9f9f9; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior, centrado */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo de la sección */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para los encabezados */
+#acerca h2 {
+    font-size: 2em; /* Tamaño de fuente para el h2 */
+    color: #2c3e50; /* Color del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+#acerca h4 {
+    font-size: 1.5em; /* Tamaño de fuente para el h4 */
+    color: #34495e; /* Color del texto */
+    margin-top: 20px; /* Espaciado superior */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+/* Estilo para los párrafos */
+#acerca p {
+    font-size: 1em; /* Tamaño de fuente para los párrafos */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    color: #555; /* Color del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Estilo para las listas */
+#acerca ul {
+    list-style-type: disc; /* Tipo de viñetas */
+    padding-left: 20px; /* Espaciado a la izquierda */
+}
+
+#acerca li {
+    margin-bottom: 10px; /* Espaciado inferior para los elementos de la lista */
+}
+
+/* Estilo para los enlaces */
+#acerca a {
+    color: #2980b9; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+#acerca a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+    color: #1a5276; /* Color más oscuro al pasar el mouse */
+}
+
+#acerca img {
+    flex: 1;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilos generales para la sección */
+#equipos {
+    background-color: #f9f9f9; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior, centrado */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo de la sección */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilos para la sección de equipos */
+#equipos-info {
+    background-color: #f9f9f9; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior, centrado */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 1200px; /* Ancho máximo de la sección */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Contenedor de tarjetas */
+/* Contenedor principal de las tarjetas */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra las tarjetas */
+    gap: 15px; /* Espaciado entre tarjetas */
+    padding: 15px;
+}
+
+/* Estilos generales de las tarjetas */
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+    width: calc(20% - 20px); /* 5 tarjetas por fila en pantallas grandes */
+    min-width: 200px; /* Evita que se hagan demasiado pequeñas */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.card a {
+    color: inherit; /* Heredar el color del texto */
+    text-decoration: none; /* Sin subrayado */
+    display: block; /* Hacer que el enlace ocupe todo el espacio de la tarjeta *//* Asegurarse de que el enlace ocupe toda la altura */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Estilos de las imágenes dentro de las tarjetas */
+.card img {
+    width: 10px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos de los títulos */
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilos de los párrafos */
+.card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+button {
+    color: #090909; /* Color del texto */
+    padding: 0.7em 1.7em; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
+    border-radius: 0.5em; /* Bordes redondeados */
+    background: #e8e8e8; /* Color de fondo */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    border: 1px solid #e8e8e8; /* Borde del botón */
+    transition: all 0.3s; /* Transiciones suaves */
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff; /* Sombra */
+}
+
+button:active {
+    color: #666; /* Color del texto al hacer clic */
+    box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff; /* Sombra interna al hacer clic */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+    color: #ffffff; /* Cambiar el color del texto al pasar el mouse */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Sombra más pronunciada al pasar el mouse */
+}
+
+/* 📱 Responsividad - Diseño para móviles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%; /* Una tarjeta por fila */
+    }
+}
+
+/* Estilo para los encabezados de la sección */
+#equipos h2 {
+    font-size: 2em; /* Tamaño de fuente para el h2 */
+    color: #2980b9; /* Color del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+#equipos h4 {
+    font-size: 1.5em; /* Tamaño de fuente para el h4 */
+    color: #34495e; /* Color del texto */
+    margin-top: 10px; /* Espaciado superior */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Colapsar bordes */
+    margin-top: 20px; /* Margen superior */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Bordes de las celdas */
+    padding: 10px; /* Espaciado interno */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo para los encabezados de la tabla */
+th {
+    background-color: #2980b9; /* Color de fondo de los encabezados */
+    color: white; /* Color del texto de los encabezados */
+}
+
+/* Estilo para las filas de la tabla */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+tr:hover {
+    background-color: #d1e7fd; /* Color de fondo al pasar el mouse */
+}
+
+/* Estilo para las imágenes de los equipos */
+td img {
+    max-width: 30px; /* Ancho máximo de las imágenes */
+    height: auto; /* Mantener la proporción */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px; /* Reducir el espaciado interno en pantallas pequeñas */
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
+
+    #equipos h2 {
+        font-size: 1.5em; /* Reducir el tamaño del encabezado en pantallas pequeñas */
+    }
+
+    #equipos h4 {
+        font-size: 1.2em; /* Reducir el tamaño del subencabezado en pantallas pequeñas */
+    }
+}
+/* Responsividad */
+@media (max-width: 768px) {
+    #acerca {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #acerca img {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.card {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 300px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    background-color: #f9f9f9; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen superior e inferior, centrado */
+    border-radius: 8px; /* Bordes redondeados */
+    max-width: 800px; /* Ancho máximo de la sección */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el encabezado de la sección */
+#contacto h2 {
+    color: #007BFF; /* Color del texto del encabezado */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Estilos para el formulario */
+form {
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna */
+}
+
+/* Estilo para las etiquetas */
+form label {
+    margin-top: 10px; /* Margen superior */
+    font-weight: bold; /* Negrita para las etiquetas */
+}
+
+/* Estilo para los campos de entrada */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Margen superior */
+    border: 1px solid #ddd; /* Bordes */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Estilo para los botones */
+form input[type="submit"] {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Estilo para los campos de radio */
+form input[type="radio"] {
+    margin-left: 10px; /* Margen a la izquierda */
+}
+
+/* Estilo para el select */
+form select {
+    padding: 10px; /* Espaciado interno */
+    margin-top: 5px; /* Margen superior */
+    border: 1px solid #ddd; /* Bordes */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+    #contacto {
+        padding: 15px; /* Reducir el espaciado interno en pantallas pequeñas */
+    }
+
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="date"],
+    form select {
+        font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    }
+
+    form input[type="submit"] {
+        font-size: 0.9em; /* Reducir el tamaño de la fuente del botón */
+    }
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    padding: 20px; /* Espaciado interno */
+    position: relative; /* Posicionamiento relativo */
+    bottom: 0; /* Alinear al fondo */
+    width: 100%; /* Ancho completo */
+}
+
+footer h2 {
+    margin: 0; /* Sin margen */
+    font-size: 1.5em; /* Tamaño de fuente para el encabezado */
+}
+
+footer p {
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+/* Estilo para los enlaces en el pie de página */
+footer a {
+    color: #007BFF; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+/* Responsivo */
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card {
+        width: 18%;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 90%;
+    }
+}
