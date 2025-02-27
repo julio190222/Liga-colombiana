@@ -1,33 +1,52 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif; /* Fuente general */
-    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    font-family: Arial, sans-serif; 
+    line-height: 1.6; 
     margin: 0; /* Sin márgenes */
     padding: 0; /* Sin relleno */
     background-color: #eef2f3; /* Color de fondo */
     color: #333; /* Color del texto */
+    padding-top: 80px
 }
 
-/* Estilos para el encabezado */
+
 /* Estilos para el encabezado */
 header {
     background-color: #2c3e50; /* Color de fondo del encabezado */
     color: white; /* Color del texto */
-    padding: 10px; /* Reducir el espaciado interno */
+    padding: 0 30px; /* Reducir el espaciado interno */
     text-align: center; /* Centrar texto */
     position: fixed; /* Fijar el encabezado */
     top: 0; /* Alinear al top */
     left: 0; /* Alinear al left */
     width: 100%; /* Ancho completo */
-    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    margin-top: 80px; /* Espacio para evitar que el header tape el contenido */
 }
 
 /* Estilo para el título del encabezado */
 header h1 {
-    font-size: 1.5em; /* Reducir el tamaño de la fuente del título */
+    font-size: 1.3em; /* Reducir el tamaño de la fuente del título */
     margin: 0; /* Sin margen */
 }
 
+
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 100px; /* Ajustar en móviles si el header es más grande */
+    }
+    main {
+        margin-top: 100px;
+    }
+}
 /* Estilo para la navegación */
 nav ul {
     list-style: none; /* Sin viñetas */
@@ -49,10 +68,7 @@ nav a:hover {
     text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
-/* Para evitar que el contenido se superponga al encabezado fijo */
-body {
-    padding-top: 60px; /* Ajusta este valor según la nueva altura de tu encabezado */
-}
+
 
 /* Estilos para la sección de inicio */
 #inicio {
@@ -153,14 +169,14 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-/* Contenedor de tarjetas */
 /* Contenedor principal de las tarjetas */
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: center; /* Centra las tarjetas */
-    gap: 15px; /* Espaciado entre tarjetas */
-    padding: 15px;
+    gap: 16px; /* Espaciado entre tarjetas */
+    padding: 20px;
+    margin: 0 auto;
 }
 
 /* Estilos generales de las tarjetas */
@@ -168,7 +184,7 @@ body {
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 15px;
+    padding: 16px;
     text-align: center;
     width: calc(20% - 20px); /* 5 tarjetas por fila en pantallas grandes */
     min-width: 200px; /* Evita que se hagan demasiado pequeñas */
@@ -189,10 +205,11 @@ body {
 
 /* Estilos de las imágenes dentro de las tarjetas */
 .card img {
-    width: 10px;
-    height: auto;
-    margin-bottom: 10px;
+    max-width: 100%;
+    height: 100px; /* O el tamaño que prefieras */
+    object-fit: contain; /* Asegura que la imagen se ajuste sin distorsión */
 }
+
 
 /* Estilos de los títulos */
 .card h3 {
